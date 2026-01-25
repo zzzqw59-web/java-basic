@@ -21,5 +21,6 @@ public class ClassStart3 {
         System.out.println("이름: " + student1.name + " 나이: " + student1.age + " 등급: " + student1.grade);
         System.out.println("이름: " + student2.name + " 나이: " + student2.age + " 등급: " + student2.grade);
         System.out.println("이름: " + student3.name + " 나이: " + student3.age + " 등급: " + student3.grade);
+        System.out.println("이름: " + student3.name + " 나이: " + student3.age + " 등급: " + student3.grade);
     }
 }
