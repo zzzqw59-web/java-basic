@@ -22,6 +22,7 @@ public class ProductOrderMain {
         order3.quantity = 2;
         orders[2] = order3;
         orders[2] = order3;
+        orders[2] = order3;
 
         int totalAmount = 0;
         for (ProductOrder order : orders) {
