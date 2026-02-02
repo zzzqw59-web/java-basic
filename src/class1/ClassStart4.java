@@ -1,9 +1,8 @@
 package class1;
 
-public class ClassStart3 {
+public class ClassStart4 {
     public static void main(String[] args) {
-        Student student1;
-        student1 = new Student(); // x001
+        Student student1 = new Student(); // x001
         student1.name = "학생1";
         student1.age = 15;
         student1.grade = 90;
@@ -18,8 +17,11 @@ public class ClassStart3 {
         student3.age = 25;
         student3.grade = 100;
 
-        System.out.println("이름: " + student1.name + " 나이: " + student1.age + " 등급: " + student1.grade);
-        System.out.println("이름: " + student2.name + " 나이: " + student2.age + " 등급: " + student2.grade);
-        System.out.println("이름: " + student3.name + " 나이: " + student3.age + " 등급: " + student3.grade);
+        Student[] students = new Student[2];
+        students[0] = student1;
+        students[1] = student2;
+
+        System.out.println("이름: " + students[0].name + " 나이: " + students[0].age + " 등급: " + students[0].grade);
+        System.out.println("이름: " + students[1].name + " 나이: " + students[1].age + " 등급: " + students[1].grade);
     }
 }
