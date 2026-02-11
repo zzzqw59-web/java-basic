@@ -30,6 +30,6 @@ public class BookMain {
         for (Book book : books) {
             totalAmount += book.price;
         }
-        return totalAmount;
+//        return totalAmount;
     }
 }
