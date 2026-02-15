@@ -31,6 +31,5 @@ public class BookMain {
             totalAmount += book.price;
         }
         return totalAmount;
-//         테스트용 합니다.
     }
 }
