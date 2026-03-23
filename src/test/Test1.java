@@ -2,8 +2,26 @@ package test;
 
 public class Test1 {
     public static void main(String[] args) {
-        int score = 80;
-        boolean value = score >= 80 && score <= 100;
-//        System.out.println(value);
+        int age = 14;
+
+        if (age <= 7) {
+            System.out.println("미취");
+        }
+
+        if (age >= 8 && age <= 13) {
+            System.out.println("초등학생");
+        }
+
+        if (age >= 14 && age <= 16) {
+            System.out.println("중학생");
+        }
+
+        if (age >= 16 && age <= 19) {
+            System.out.println("고등학");
+        }
+
+        if (age >= 20) {
+            System.out.println("성인");
+        }
     }
 }
