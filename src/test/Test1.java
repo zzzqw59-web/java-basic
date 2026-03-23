@@ -2,26 +2,20 @@ package test;
 
 public class Test1 {
     public static void main(String[] args) {
-        int age = 14;
+        int price = 10000;
+        int age = 10;
+        int discount = 0;
 
-        if (age <= 7) {
-            System.out.println("미취");
+        if (price >= 10000) {
+            discount = discount + 1000;
+            System.out.println("10000원 이상일 때, 1000원 할인");
         }
 
-        if (age >= 8 && age <= 13) {
-            System.out.println("초등학생");
+        if (age <= 10) {
+            discount = discount + 1000;
+            System.out.println("10살 이하의 경우, 1000원 할인");
         }
 
-        if (age >= 14 && age <= 16) {
-            System.out.println("중학생");
-        }
-
-        if (age >= 16 && age <= 19) {
-            System.out.println("고등학");
-        }
-
-        if (age >= 20) {
-            System.out.println("성인");
-        }
+        System.out.println("총 할인 금액" + discount);
     }
 }
