@@ -1,11 +1,13 @@
 package test;
 
+import java.util.Scanner;
+
 public class Test1 {
     public static void main(String[] args) {
-        int x = 1;
+        int[] students = {90, 80, 70, 60, 50};
 
-
-        String result = (x % 2 == 0) ? "짝수" : "홀수";
-        System.out.println(result);
+        for (int i = 0; i < students.length; i++) {
+            System.out.println("학생" + (i + 1) + " 점수: " + students[i]);
+        }
     }
 }
