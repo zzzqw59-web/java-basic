@@ -4,14 +4,23 @@ import java.util.Scanner;
 
 public class Test1 {
     public static void main(String[] args) {
-        int num1 = 5;
-        System.out.println("changeNumber 호출 전, num1: " + num1);
-        num1 = changeNumber(num1);
-        System.out.println("changeNumber 호출 후, num1: " + num1);
+        int sum = sum(1, 2, 3);
+        System.out.println(sum);
+        double average = average(1, 2, 3);
+        System.out.println(average);
+
+        sum = sum(15, 25, 35);
+        System.out.println(sum);
+        average = average(15, 25, 35);
+        System.out.println(average);
     }
 
-    public static int changeNumber(int num2) {
-        num2 = num2 * 2;
-        return num2;
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static double average(int a, int b, int c) {
+        int sum = a + b + c;
+        return sum / 3.0;
     }
 }
