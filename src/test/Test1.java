@@ -4,23 +4,18 @@ import java.util.Scanner;
 
 public class Test1 {
     public static void main(String[] args) {
-        int sum = sum(1, 2, 3);
-        System.out.println(sum);
-        double average = average(1, 2, 3);
-        System.out.println(average);
+        int[] arr = {10, 20, 30, 40, 50};
 
-        sum = sum(15, 25, 35);
-        System.out.println(sum);
-        average = average(15, 25, 35);
+        double average = average(arr);
         System.out.println(average);
     }
 
-    public static int sum(int a, int b, int c) {
-        return a + b + c;
-    }
-
-    public static double average(int a, int b, int c) {
-        int sum = a + b + c;
-        return sum / 3.0;
+    public static double average (int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        double average = sum / arr.length;
+        return average;
     }
 }
