@@ -4,18 +4,24 @@ import java.util.Scanner;
 
 public class Test1 {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30, 40, 50};
+        Student student1 = new Student();
+        student1.name = "학생1";
+        student1.age = 15;
+        student1.grade = 90;
 
-        double average = average(arr);
-        System.out.println(average);
-    }
+        Student student2 = new Student();
+        student2.name = "학생2";
+        student2.age = 16;
+        student2.grade = 80;
 
-    public static double average (int[] arr) {
-        int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        Student[] students = new Student[]{student1, student2};
+
+//        for (Student student : students) {
+//            System.out.println("이름: " + student.name + " 나이: " + student.age + " 등급: " + student.grade);
+//        }
+
+        for (int i = 0; i < students.length; i++) {
+            System.out.println("이름: " + students[i].name + " 나이: " + students[i].age + " 등급: " + students[i].grade);
         }
-        double average = sum / arr.length;
-        return average;
     }
 }
