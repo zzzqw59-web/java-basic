@@ -5,6 +5,10 @@ public class MemberConstructor {
     int age;
     int grade;
 
+    MemberConstructor(String name, int age) {
+        this(name, age, 50); // 변경
+    }
+
     MemberConstructor(String name, int age, int grade) {
         System.out.println("name = " + name + ", age = " + age + ", grade = " + grade);
         this.name = name;
