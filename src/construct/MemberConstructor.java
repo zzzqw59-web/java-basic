@@ -6,7 +6,7 @@ public class MemberConstructor {
     int grade;
 
     MemberConstructor(String name, int age) {
-        this(name, age, 50); // 변경
+        this(name, age, 50);
     }
 
     MemberConstructor(String name, int age, int grade) {
