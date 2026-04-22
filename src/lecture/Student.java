@@ -9,4 +9,12 @@ public class Student {
     public void showStudent() {
         System.out.println(studentName + "," + address);
     }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String name) {
+        studentName = name;
+    }
 }
