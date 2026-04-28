@@ -33,7 +33,7 @@ public class ProductOrderMain {
             totalAmount += order.price * order.quantity;
         }
         System.out.println("총 결제금액: " + totalAmount);
-
+        System.out.println("test");
 
     }
 }
